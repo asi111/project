@@ -1,0 +1,389 @@
+:root{ 
+    --main-font-size:15px;
+    --main-font-weight:bold;
+}
+
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: #000;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    position: fixed;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo{
+    width: 20%;
+    height: 110%;
+}
+    
+.nav-links{
+    padding: 28px 0;
+ }
+ 
+
+.nav-links li{
+    display: inline;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: wheat;
+    padding: 5px 0;
+    position:relative;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition:width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    background: #ff0000;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+    .slideContainer{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        animation: slide 12s infinite;
+    }
+
+    .content{
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0,0.5);
+    }
+
+    .principal{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    
+    .principal   h1{
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    
+    .principal p{
+        font-size: 20px;
+    }
+    
+    @keyframes slide {
+        0%{
+            background-image: url(../img/DDUC4R9lTl_foto16_9.jpg);
+        }
+        25%{ background-image: url(../img/DDUC4R9lTl_foto16_9.jpg);
+            
+        }
+        25.01%{
+            background-image: url(../img/2021.jpg);
+        }
+        50%{ background-image: url(../img/2021.jpg);
+            
+        }
+        50.01%{
+            background-image: url(../img/la\ liga.jpg);
+        }
+        75%{ background-image: url(../img/la\ liga.jpg);
+            
+        }
+        75.01%{
+            background-image: url(../img/team.jpg);
+        }
+        100%{ background-image: url(../img/team.jpg);
+            
+        }
+    }
+
+    .contact{  
+        width: 100%;
+        height: 150vh;
+        background-image: url(../img/wanda.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2,1fr);  
+    }
+
+    .formnow{ 
+        grid-column: 2/5;
+        grid-row: 1/2;
+        margin-top:45px;
+        border-radius:15px;
+        margin-left: 20px;
+        margin-right:20px ;
+        background: #fff;
+        margin-bottom:20%; 
+        opacity: 0.9;
+     
+    }
+    
+    .logIn{
+        width: 60%;
+        margin-left: 15%;
+        
+    }
+    
+    .labelTexet{
+        font-weight: var( --main-font-weight);
+        font-size: var(--main-font-size) 
+    }
+    
+    .pass{
+        font-weight: var( --main-font-weight);
+        font-size: var(--main-font-size) ;
+        cursor: pointer;
+    }
+    
+    .formnow h2{
+        text-align: center;
+    } 
+    
+    input[type=text],[type=password]{
+        width: 100%;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: none;
+        outline-style:solid;
+    }
+    
+    input[type="submit"]{
+        width: 110%;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background: #2691d9;
+        border: 1px solid;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    .divfelix {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .parFelix{
+        padding-bottom: 0%;
+        background-color: #000;
+        color: #fff;
+        font-size: 12px;
+        font-size: var(--main-font-size) 
+    }
+    
+    
+    .divfelix img{
+        width: 70%;
+    }  
+    
+    .divVideo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .parShert{ 
+        background-color: #000;
+        color: #fff;
+        margin-left: 0;
+        font-size: var(--main-font-size)
+    }
+
+    .newShert{
+        margin-left: 40%;
+    }
+    .divllorente{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        
+    }
+    
+    .parllorente{
+        padding-bottom: 0%;
+        background-color: #000;
+        color: #fff;
+        font-size: var(--main-font-size)
+    }
+    
+    .videocontiner{
+        background: #DCE35B; 
+        background: -webkit-linear-gradient(to right, #45B649, #DCE35B); 
+        background: linear-gradient(to right, #45B649, #DCE35B); 
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        margin-top:0%;
+    }
+
+        .center{
+            margin-left:30%;
+            
+        }
+        .videocontiner h1{
+            font-family: fantasy;
+            padding-bottom: 0%;
+
+        }
+        
+        .mainVideo{
+            margin-top:10px ;
+        }
+
+        .mainFooter{
+         width: 100%;
+         height: 100%;
+         display: flex;
+         background:black;
+        } 
+
+        .mainFooter img{
+            width: 170px;
+            height:170px;
+            cursor: pointer;
+        }
+        
+        
+        @media screen and (max-width:770px){
+            nav{
+                width: 100%;
+            }
+            .contact{  
+                width: 100%;
+                height: 150vh;
+                background-image: url(../img/wanda.jpg);
+                background-size: cover;
+                display: grid;
+                grid-template-columns: 1fr 1fr  ;
+                grid-template-rows: repeat(3,68%);  
+                overflow: hidden;
+            }
+
+            .logo{
+                width:15%;
+                height: 100%;
+
+            }
+
+            .videocontiner{display: flex;
+                flex-direction: column;
+
+            }
+
+            .center{
+                margin-left: 0%;
+            }
+
+            .divVideo{
+                display: none;
+            }
+            .divfelix {
+                grid-column: 1/2;
+                grid-row: 1/2;}
+            
+                .parShert{
+                        display: none;
+                }
+            iframe{
+            margin-top:20px ;
+            width:200px!important;
+            height: 100px !important;
+        }
+ 
+        
+
+        }
+
+        @media screen and (max-width:427px){
+            .contact{  
+                width: 100%;
+                height: 150vh;
+                background-image: url(../img/wanda.jpg);
+                background-size: cover;
+                display: grid;
+                grid-template-columns: 1fr  ;
+                grid-template-rows: repeat(8 ,48%);  
+                overflow: hidden;
+            }
+            .parFelix{
+                font-size: 10px;
+            }
+            .parllorente{
+                font-size: 10px;
+            }
+            .divllorente img{
+                width: 200px;
+            }
+            .newShert{
+                margin-left: 5%;
+               
+            }
+            .newShert img{
+                width: 200px;
+               
+            }
+            nav{
+                width: 123%;
+            }
+
+            .divVideo{
+                display: none;
+            }
+            iframe{
+            margin-top:20px ;
+            width:200px!important;
+            height: 100px !important;
+        }
+         .formnow{
+            margin-left: 0%;
+
+         }
+         .nav-links .btn{
+          margin-left: 73%;
+         }
+         .logo{
+             display: none;
+         }
+         .mainFooter img{
+            width: 141px;
+            height: 80px;
+          
+        }
+        
+
+        }
+
+
+        
+            
+
+            
